@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "RockSalt";
+    src: url("../fontes/RockSalt-Regular.ttf") format('opentype'); 
+    font-weight: normal;
+    font-style: normal; 
+}
+
+:root {
+
+    --cor1: rgb(36, 35, 35);
+    --cor2: #400e25dc;
+    --cor3: #2f400acc;
+    --cor4: #BF7636;
+    --cor5: #A66658;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'RockSalt', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    color: var(--cor4);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--cor1);
+}
