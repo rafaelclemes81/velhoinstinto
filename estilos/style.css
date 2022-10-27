@@ -35,6 +35,12 @@ html, body {
     text-align: left;
     padding: 10px 0px 10px 0px;
     font-family: var(--fonte-destaque);
+    color: var(--cor4);
+}
+
+.icon {
+    background-color: var(--cor1);
+    text-align: center;
 }
 
 .icon a{
@@ -87,23 +93,21 @@ header {
 
 section#videos {
     padding: 20px;
+    background-color: var(--cor1);
 }
 
 section#galeria {
-    padding: 20px;
+    background-color: var(--cor1);
 }
 
 section#historia {
-    width: 600px;
-    height: 400px;
+    background-color: var(--cor1);
+    display: block;
+    margin: auto;
+    height: 600px;
     padding: 0px 20px 20px 20px;
     text-align: justify;
-}
-
-img#foto {
-    width: 300;
-    height: 600;
-    text-align: right;
+    color: var(--cor4)
 }
 
 section#imagem {
@@ -115,11 +119,11 @@ section#imagem {
     background-attachment: fixed;
 }
 
-div {
+/* div {
     background-color: var(--cor1);
     text-align: center;
     padding: 40px;
-}
+} */
 
 li {
     font: var(--fonte-padrao);
