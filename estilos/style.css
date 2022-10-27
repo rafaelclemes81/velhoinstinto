@@ -80,8 +80,8 @@ header {
     text-shadow: 2px 2px 0px black;
     font-size: 3em;
     color: var(--cor4);
-    padding: 10px;
     text-align: center;
+    padding: 10px;
     background-color: var(--cor1);
 }
 
@@ -96,7 +96,7 @@ section#galeria {
 section#historia {
     width: 600px;
     height: 400px;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
     text-align: justify;
 }
 
@@ -121,7 +121,13 @@ div {
     padding: 40px;
 }
 
-p, li {
+li {
+    font: var(--fonte-padrao);
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+p {
     font: var(--fonte-padrao);
     font-size: 1.3em;
     font-weight: normal;
