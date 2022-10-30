@@ -8,40 +8,25 @@
 }
 
 :root {
-
-    --cor1: rgb(80, 77, 77);
+    --cor1: rgb(63, 61, 61);
     --cor2: #400e25dc;
     --cor3: #7c7e79;
     --cor4: #BF7636;
     --cor5: #A66658;
     --cor6: #fac699;
-
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'RockSalt', cursive;
-
 }
 
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
-html, body {
-    font: var(--fonte-padrao);
-    min-height: 100vh;
-}
-
-.subtitulo {
-    text-align: left;
-    padding: 10px 0px 10px 0px;
-    font-family: var(--fonte-destaque);
-    color: var(--cor4);
-    text-shadow: 2px 2px 0px black;
-}
-
-.icon {
-    background-color: var(--cor1);
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon a{
@@ -72,85 +57,134 @@ html, body {
 
 .icon a:hover{
     transform: scale(0.8);
+    color: var(--cor4);
 }
 
 .icon a:hover::before{
     border-left: 4px solid;
     border-right: 4px solid;
     transform: skewX(20deg);
+    color: var(--cor4);
 }
 
 .icon a:hover::after{
     border-top: 4px solid;
     border-bottom: 4px solid;
     transform: skewy(-20deg);
+    color: var(--cor4);
+}
+
+.subtitulo {
+    font-family: var(--fonte-destaque);
+    text-shadow: 1px 1px 0px black;
+    color: var(--cor4);
+    padding: 20px 0px 20px 0px;
+}
+
+.icon {
+    background-color: var(--cor1);
+    text-align: center;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: var(--cor1);
 }
 
 header {
     font-family: var(--fonte-destaque);
     text-shadow: 2px 2px 0px black;
     font-size: 3em;
-    color: var(--cor4);
-    text-align: center;
-    padding: 50px;
     background-color: var(--cor1);
+    color: #BF7636;
+    text-align: center;
+    padding: 50px 0px 10px 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor1);
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: var(--cor5);
+    padding: 0px 10px 0px 10px;
+}
+
+nav > a:hover {
+    color:var(--cor4);
 }
 
 section#historia {
-    background-color: var(--cor1);
-    display: block;
-    margin: auto;
-    height: 600px;
-    padding: 0px 20px 20px 20px;
-    text-align: justify;
-    color: var(--cor4)
+    padding: 40px 0px 40px 0px;
 }
 
 section#imagem {
-    height: 500px;
-    padding: 20px;
+    display: block;
+    height: 600px;
+    padding: 0px 30px 30px 30px;
     background-image: url("../imagens/velho001.jpg");
-    background-position: right center;
     background-size: cover;
     background-attachment: fixed;
+    background-position: top right;
+    background-color: var(--cor1);
 }
 
 section#videos {
-    margin: 0px;
-    padding: 20px;
+    padding: 30px;
     background-color: var(--cor1);
 }
 
+div#youtube {
+    display: flex;
+    justify-content: center;
+}
+
+iframe#vid01 {
+    padding: 0px 15px 0px 0px;
+}
+
+iframe#vid02 {
+    padding: 0px 0px 0px 15px;
+}
 section#galeria {
-    padding: 20px;
+    padding: 0px 30px 0px 30px;
     background-color: var(--cor1);
 }
 
-div {
-    background-color: var(--cor1);
-    text-align: center;
-    padding: 40px;
-}
-
-li {
-    font: var(--fonte-padrao);
-    font-size: 1.3em;
-    font-weight: normal;
-}
-
-p {
-    font: var(--fonte-padrao);
-    font-size: 1.3em;
-    font-weight: normal;
+div#nossahistoria {
+    padding: 0px 30px 30px 0px;
 }
 
 footer {
-    text-align: center;
     background-color: var(--cor1);
     color: var(--cor4);
+    text-align: center;
     font-size: 0.8em;
 }
 
 footer > p {
-    font-size: 0.8em;
+    text-align: center;
+    font-size: 1em;
+}
+
+p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--cor4);
+}
+
+p > a:hover {
+    color:var(--cor4);
 }

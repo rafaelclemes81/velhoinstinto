@@ -16,37 +16,62 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <h1>Banda Velho Instinto</h1>
     </header>
-
-    <section id="historia">
-        <h2 class="subtitulo">Nossa História</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consectetur assumenda sunt non, labore id
-            libero nobis blanditiis provident esse, dolorum eos pariatur doloribus ipsum error. Aspernatur quisquam
-            voluptate cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est doloremque nam cumque culpa
-            distinctio minima veniam eaque ipsum! Quibusdam harum quisquam repellat doloremque officiis cupiditate optio
-            labore non architecto delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            repudiandae. Doloribus quae dicta incidunt distinctio, ab sequi a iure eos placeat fugit dolores dolorum
-            illum repellendus quis pariatur culpa ullam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            distinctio dicta ipsa architecto velit totam incidunt earum maxime nulla cupiditate quaerat unde, nihil
-            provident pariatur alias blanditiis consectetur quo reprehenderit!</p>
+    
+    <div class="icon" id="social">
+        <a href="https://wa.me/5548991275067" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/velhoinstinto/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UC5s0l28yARcm6ptd8e5SISA" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/velhoinstinto" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+    
+    <nav>
+        <a href=#home>Home</a>
+        <a href=#imagem>Agenda</a>
+        <a href=#videos>Vídeos</a>
+        <a href=#galeria>Fotos</a>
+    </nav>
+    <section class="container" id="historia">
+        <div id="nossahistoria">
+            <h2 class="subtitulo">Nossa História</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consectetur assumenda sunt non, labore
+                id
+                libero nobis blanditiis provident esse, dolorum eos pariatur doloribus ipsum error. Aspernatur quisquam
+                voluptate cum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est doloremque nam cumque culpa
+                distinctio minima veniam eaque ipsum! Quibusdam harum quisquam repellat doloremque officiis cupiditate
+                optio
+                labore non architecto delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                repudiandae. Doloribus quae dicta incidunt distinctio, ab sequi a iure eos placeat fugit dolores dolorum
+                illum repellendus quis pariatur culpa ullam.
+            </p>
+        </div>
+        <div id="nossahistoria">
+            <img src="imagens/velho002-600x428.jpg" alt="Banda Velho Instinti">
+        </div>
     </section>
 
     <section id="imagem">
         <h2 class="subtitulo">Agenda</h2>
-        <ul>
-            <li type="none">Agenda livre</li>
-        </ul>
+        <p>Agenda Livre</p>
     </section>
 
     <section id="videos">
         <h2 class="subtitulo">Vídeos</h2>
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/videoseries?list=PL0tqZVT6WZynXo1lEpy7iqjzfZkXrTyX4"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div id="youtube">
+            <iframe id="vid01" width="560" height="315" src="https://www.youtube.com/embed/0T29kk1sGpw?controls=0&amp;start=600"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <iframe id="vid02" width="560" height="315" src="https://www.youtube.com/embed/GwggzaJQ3A4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <section id="galeria">
@@ -88,15 +113,8 @@
         </div>
     </section>
 
-    <div class="icon">
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-    </div>
-
     <footer>
-        <p>Site criado por Rafael Clemes - 2022</p>
+        <p>Site criado por <a href="https://github.com/rafaelclemes81" target="_blank">Rafael Clemes</a> - 2022</p>
     </footer>
 </body>
 
