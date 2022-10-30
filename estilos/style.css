@@ -26,8 +26,9 @@
 
 .container {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px 30px 10px 30px;
 }
 
 .icon a{
@@ -122,10 +123,6 @@ nav > a:hover {
     color:var(--cor4);
 }
 
-section#historia {
-    padding: 10px 0px 10px 0px;
-}
-
 section#imagem {
     display: block;
     height: 600px;
@@ -133,7 +130,7 @@ section#imagem {
     background-image: url("../imagens/velho001.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: top right;
+    background-position: top left;
     background-color: var(--cor1);
 }
 
@@ -159,7 +156,7 @@ section#galeria {
 
 div#nossahistoria {
     width: 500px;
-    padding: 30px;
+    padding-right: 30px;
 }
 
 footer {
