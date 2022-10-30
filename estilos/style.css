@@ -31,6 +31,17 @@
     padding: 10px 30px 10px 30px;
 }
 
+.btn-fixed {
+    position: fixed;
+    bottom: top;
+    right: 30px;
+    visibility: hidden;
+}
+
+.btn-fixed.visibility {
+    visibility: visible;
+}
+
 .icon a{
     display: inline;
     font-size: 40px;
@@ -84,6 +95,8 @@
 }
 
 .icon {
+    display: flex;
+    justify-content: center;
     background-color: var(--cor1);
     text-align: center;
 }
@@ -185,4 +198,56 @@ p > a {
 
 p > a:hover {
     color:var(--cor4);
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    text-align: center;
+    z-index: 999999;
+    background-color: #0017ff00;
+    color: #eeeeee;
+    width: 80px;
+    height: 78px;
+    line-height: 48px;
+    right: 30px;
+    bottom: 30px;
+    padding-top: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+    background-color: #0017ff00;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
+
+.contrate {
+    width: 160px;
+    height: 72px;
+    padding: 10px;
+    background-color: darkgreen;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#contato {
+    text-decoration: none;
+    color: white;
 }
