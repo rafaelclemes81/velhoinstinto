@@ -8,7 +8,7 @@
 }
 
 :root {
-    --cor1: rgb(63, 61, 61);
+    --cor1: #282828;
     --cor2: #400e25dc;
     --cor3: #7c7e79;
     --cor4: #BF7636;
@@ -26,7 +26,7 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .icon a{
@@ -144,22 +144,21 @@ section#videos {
 div#youtube {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 iframe#vid01 {
-    padding: 0px 15px 0px 0px;
+    padding: 15px;
 }
 
-iframe#vid02 {
-    padding: 0px 0px 0px 15px;
-}
 section#galeria {
     padding: 0px 30px 0px 30px;
     background-color: var(--cor1);
 }
 
 div#nossahistoria {
-    padding: 0px 30px 30px 0px;
+    width: 500px;
+    padding: 30px;
 }
 
 footer {
