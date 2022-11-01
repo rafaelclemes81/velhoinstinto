@@ -51,8 +51,8 @@
     background-color: var(--cor1);
     color: var(--cor4);
     text-align: center;
-    line-height: 100px;
-    margin: 0 20px;
+    line-height: 60px;
+    margin: 0 30px;
     position: relative;
     transition: 0.4s linear;
 }
