@@ -158,6 +158,11 @@ div#youtube {
     flex-wrap: wrap;
 }
 
+div#social {
+    display: flex;
+    justify-content: center;
+}
+
 iframe#vid01 {
     padding: 15px;
 }
