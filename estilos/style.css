@@ -52,7 +52,7 @@
     color: var(--cor4);
     text-align: center;
     line-height: 60px;
-    margin: 0 30px;
+    margin: 0 0px;
     position: relative;
     transition: 0.4s linear;
 }
@@ -109,7 +109,7 @@ html, body {
 header {
     font-family: var(--fonte-destaque);
     text-shadow: 2px 2px 0px black;
-    font-size: 3em;
+    font-size:5em;
     background-color: var(--cor1);
     color: #BF7636;
     text-align: center;
@@ -133,7 +133,8 @@ nav > a {
 }
 
 nav > a:hover {
-    color:var(--cor4);
+    color: var(--cor4);
+    font-weight: bolder;
 }
 
 section#imagem {
