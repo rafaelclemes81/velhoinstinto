@@ -20,10 +20,17 @@
 <body>
     <header id="home">
         <h1>Velho Instinto</h1>
+        <i id="icone" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href=#home>Home</a></li>
+                <li><a href=#imagem>Agenda</a></li>
+                <li><a href=#videos>Vídeos</a></li>
+                <li><a href=#galeria>Fotos</a></li>
+            </ul>
+        </menu>
     </header>
-
     <div class="icon" id="social">
-        <a href="https://wa.me/5548991275067" target="_blank"><img src="imagens/logo-home.jpg" alt=""></a><br>
         <a href="https://www.instagram.com/velhoinstinto/" target="_blank"><img src="imagens/logo-instagram.jpg"
                 alt=""></a><br>
         <a href="https://www.youtube.com/channel/UC5s0l28yARcm6ptd8e5SISA" target="_blank"><img
@@ -31,15 +38,6 @@
         <a href="https://www.facebook.com/velhoinstinto" target="_blank"><img src="imagens/logo-facebook.jpg"
                 alt=""></a><br>
     </div>
-    <i id="icone" class="material-icons" onclick="clickMenu()">menu</i>
-    <menu id="itens">
-        <ul>
-            <li><a href=#home>Home</a></li>
-            <li><a href=#imagem>Agenda</a></li>
-            <li><a href=#videos>Vídeos</a></li>
-            <li><a href=#galeria>Fotos</a></li>
-        </ul>
-    </menu>
     <section class="container" id="historia">
         <div id="nossahistoria">
             <h2 class="subtitulo">Nossa História</h2>
@@ -134,15 +132,15 @@
     <script src="external/top/bootstrap.min.js"></script>
     <script src="external/top/custom.js"></script>
     <script src="external/top/contactform.js"></script>
-
     <script>
         function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
+            if (itens.style.display == 'none') {
                 itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
             }
         }
+    </script>
 </body>
 
 </html>

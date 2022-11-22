@@ -45,7 +45,7 @@
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px 30px 10px 30px;
 }
@@ -76,37 +76,44 @@ html, body {
 header {
     font-family: var(--fonte-destaque);
     text-shadow: 2px 2px 0px black;
-    font-size:5em;
+    font-size: 1em;
     background-color: var(--cor1);
     color: #BF7636;
-    text-align: center;
     padding: 50px 0px 10px 0px;
 }
 
-i#icone {
+header > h1 {
+    text-align: center;
+}
+
+header > i#icone {
+    color: var(--cor4);
+    padding: 5px 30px 5px 30px;
+    cursor: grab;
+}
+
+header > menu#itens  {
+    display: none;
+}
+
+header > menu > ul {
+    list-style-type: none;
+}
+
+header > menu > ul > li {
+    padding: 10px;
+}
+
+header > menu > ul > li> a {
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+    text-decoration: none;
+    text-align: left;
     background-color: var(--cor1);
     color: var(--cor4);
 }
 
-menu {
-    display: none;
-}
-
-menu > ul {
-    list-style-type: none;
-}
-
-menu > ul > li> a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgb(58, 56, 56);
-    color: white;
-    border-top: 2px solid gray;
-}
-
-menu > ul > li > a:hover {
+header > menu > ul > li > a:hover {
     color: var(--cor4);
     font-weight: bolder;
 }
@@ -134,8 +141,15 @@ div#youtube {
 }
 
 div#social {
+    padding: 50px 10px 50px 10px;
     display: flex;
-    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+div#social > a {
+    padding: 30px 10px 30px 10px;
 }
 
 iframe#vid01 {
@@ -149,7 +163,7 @@ section#galeria {
 
 div#nossahistoria {
     width: 500px;
-    padding-right: 30px;
+    padding-right: 10px;
 }
 
 footer {
