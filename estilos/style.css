@@ -25,7 +25,7 @@
 }
 
 .icon {
-    background-color: var(--cor1);
+    background-color: transparent;
 }
 
 .icon img {
@@ -118,10 +118,6 @@ header > div#social {
     text-align: right;
 }
 
-header > div#social > a {
-    padding: 20px;
-}
-
 section#imagem {
     display: block;
     height: 600px;
@@ -142,12 +138,9 @@ section#imagem > div#agenda {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.418);
 }
 
-section#imagem > div#agenda > ul > li {
-    padding: 0px;
-}
-
 section#imagem > div#agenda > ul {
     list-style-type: none;
+    padding: 0px;
 }
 
 section#videos {
