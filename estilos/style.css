@@ -25,6 +25,7 @@
 }
 
 .icon {
+    padding-top: 20px;
     background-color: transparent;
 }
 
@@ -79,11 +80,14 @@ header {
     font-size: 1em;
     color: #BF7636;
     padding: 50px 0px 10px 20px;
+    background-image: url(../imagens/velho001-banner.jpg);
+    background-size: cover;
+    height: 200px;
 }
 
 header > i#icone {
     text-shadow: none;
-    color: var(--cor4);
+    color: var(--cor1);
     cursor: grab;
 }
 
@@ -93,6 +97,8 @@ header > menu#itens  {
 
 header > menu > ul {
     list-style-type: none;
+    background-color: transparent;
+    width: 180px;
 }
 
 header > menu > ul > li {
@@ -104,8 +110,8 @@ header > menu > ul > li> a {
     font-size: 1em;
     text-decoration: none;
     text-align: left;
-    background-color: var(--cor1);
-    color: var(--cor4);
+    color: var(--cor1);
+    text-shadow: none;
 }
 
 header > menu > ul > li > a:hover {
@@ -113,7 +119,8 @@ header > menu > ul > li > a:hover {
     font-weight: bolder;
 }
 
-header > div#social {
+div#social {
+    position: fixed;
     background-color: transparent;
     text-align: right;
 }
@@ -133,7 +140,7 @@ section#imagem > div#agenda {
     padding: 30px 0px;
     font-family: var(--fonte-padrao);
     font-size: 2em;
-    color: var(--cor1)
+    color: var(--cor4);
     font-weight: bold;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.418);
 }
